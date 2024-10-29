@@ -1,0 +1,63 @@
+{
+  "name": "TechXNinjasLandingPage",
+  "bucket": "TechXNinjasLandingPage",
+  "preset": "hugo",
+  "env": "production",
+  "prefix": "20241029163718",
+  "not-first-run": true,
+  "function": {
+    "id": 31412,
+    "name": "__DEFAULT__",
+    "file": ".edge/worker.js",
+    "args": "azion/args.json",
+    "instance-id": 30091,
+    "instance-name": "__DEFAULT__",
+    "cache-id": 0
+  },
+  "application": {
+    "id": 1730212740,
+    "name": "__DEFAULT__"
+  },
+  "domain": {
+    "id": 1730211266,
+    "name": "TechXNinjasLandingPage",
+    "domain_name": "dqrkj1pjdx.map.azionedge.net",
+    "url": "https://dqrkj1pjdx.map.azionedge.net"
+  },
+  "rt-purge": {
+    "purge_on_publish": true
+  },
+  "origin": [
+    {
+      "origin-id": 161197,
+      "origin-key": "80f6f699-2c24-416b-a6fa-565752a7f61e",
+      "name": "origin-storage-default"
+    }
+  ],
+  "rules-engine": {
+    "created": false,
+    "rules": [
+      {
+        "id": 313228,
+        "name": "Set Storage Origin for All Requests",
+        "phase": "request"
+      },
+      {
+        "id": 313229,
+        "name": "Deliver Static Assets",
+        "phase": "request"
+      },
+      {
+        "id": 313230,
+        "name": "Redirect to index.html",
+        "phase": "request"
+      },
+      {
+        "id": 313231,
+        "name": "Redirect to index.html for Subpaths",
+        "phase": "request"
+      }
+    ]
+  },
+  "cache-settings": []
+}
